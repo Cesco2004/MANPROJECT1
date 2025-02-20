@@ -1,0 +1,30 @@
+.vital-block {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 16px;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    background-color: #f9f9f9;
+  }
+  
+  .vital-block.alert {
+    border-color: #ff0000;
+    background-color: #ffe6e6;
+  }
+  
+  .vital-icon {
+    margin-right: 16px;
+    font-size: 24px;
+  }
+  
+  .vital-info h3 {
+    margin: 0;
+    font-size: 18px;
+  }
+  
+  .vital-info p {
+    margin: 4px 0 0;
+    font-size: 16px;
+  }
+  

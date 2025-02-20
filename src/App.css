@@ -1,0 +1,77 @@
+body {
+  background-color: #f0f8ff; /* Light blue background */
+  font-family: 'Arial, sans-serif';
+}
+
+.App-header {
+  text-align: center;
+  padding: 20px;
+  background-color: #cce6ff;
+  border-bottom: 2px solid #87bdd8;
+}
+
+.App-header h1 {
+  font-family: 'Courier New', Courier, monospace;
+  color: #004085;
+  margin: 0;
+}
+
+.dashboard {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.vital-block {
+  border: 1px solid #bdd5ea;
+  border-radius: 8px;
+  padding: 30px; /* Increased padding for height */
+  background-color: #e6f7ff;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  height: 150px; /* Fixed height for blocks */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.vital-block.alert {
+  border-color: #007bff;
+  background-color: #d9ecf9;
+}
+
+.vital-info h3 {
+  margin: 0;
+  font-size: 18px;
+  color: #004085;
+}
+
+.vital-info p {
+  margin: 4px 0 0;
+  font-size: 16px;
+  color: #004085;
+  transition: opacity 0.5s ease-in-out; /* Smooth transition effect */
+}
+
+.vital-info p.updating {
+  opacity: 0.5; /* Slight fade effect during update */
+}
+
+.recommendations-section {
+  background-color: #cce6ff;
+  border: 1px solid #87bdd8;
+  padding: 50px 0px; /* Increased padding for height */
+  text-align: center;
+  margin-top: -15px; /* Space from the blocks above */
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.recommendations-section p {
+  margin: 0;
+  font-size: 16px;
+  color: #004085;
+}
